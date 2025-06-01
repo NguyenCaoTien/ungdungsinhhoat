@@ -1,7 +1,5 @@
 import requests
-import json
 
-OUTPUT_FILE = "datarac/weather.json"
 
 def fetch_weather_data():
     url = "https://api.open-meteo.com/v1/forecast"
@@ -17,13 +15,18 @@ def fetch_weather_data():
         response.raise_for_status()
         data = response.json()
 
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+        current = data.get("current_weather", {})
+        temperature = current.get("temperature")
+        windspeed = current.get("windspeed")
+        weather_code = current.get("weathercode")
 
-        print("✅ Dữ liệu thời tiết đã được lưu vào", OUTPUT_FILE)
-
+        print(f"🌡 Nhiệt độ: {temperature}°C")
+        print(f"💨 Gió: {windspeed} km/h")
+        print(f"☁ Mã thời tiết: {weather_code}")
+        return current
     except requests.RequestException as e:
         print("❌ Lỗi khi lấy dữ liệu thời tiết:", e)
+        return None
 
 if __name__ == "__main__":
     fetch_weather_data()
