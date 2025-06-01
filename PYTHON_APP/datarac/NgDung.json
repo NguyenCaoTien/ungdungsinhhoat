@@ -1,0 +1,22 @@
+[
+    {
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin"
+    },
+    {
+        "username": "caotien",
+        "password": "123",
+        "role": "user"
+    },
+    {
+        "username": "taolamay",
+        "password": "@123",
+        "role": "user"
+    },
+    {
+        "username": "conchongu",
+        "password": "gaugau",
+        "role": "user"
+    }
+]

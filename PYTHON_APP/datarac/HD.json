@@ -1,0 +1,26 @@
+[
+    {
+        "id": "67b08d2f-2c85-4a2c-b37e-0b3dcbb07897",
+        "username": "admin",
+        "date": "2025-06-02",
+        "title": "đi học",
+        "time": "13:15",
+        "notes": "đi học python"
+    },
+    {
+        "id": "b01c42e1-36bd-4a27-9960-48e344992fb5",
+        "username": "taolamay",
+        "date": "2025-06-11",
+        "title": "đi họp lớp",
+        "time": "12:00",
+        "notes": "họp lớp bạn cấp 3"
+    },
+    {
+        "id": "ef19f26e-c433-4178-b1a2-e75ba747b342",
+        "username": "conchongu",
+        "date": "2025-06-25",
+        "title": "đi bắt trộm",
+        "time": "8:30",
+        "notes": "sử dụng chiếc mũi siêu thính để tìm đấu vết tên trộm"
+    }
+]
